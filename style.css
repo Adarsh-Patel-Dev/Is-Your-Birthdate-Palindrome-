@@ -1,0 +1,130 @@
+/* body{
+    <iframe src="https://assets.pinterest.com/ext/embed.html?id=502714377165114497" height="354" width="450" frameborder="0" scrolling="no" ></iframe>
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap');
+
+
+.hero{
+   /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    /* background-color: rgba(0, 0, 0, 0.541); */
+    margin-top: 3rem;
+    padding: 20px 0px;
+    overflow: hidden;
+    min-height: 90vh;
+    max-width: 80%;
+    margin: auto;
+    border-radius: 1rem;
+    backdrop-filter: blur(0px);
+    
+}
+
+.video-bg{
+    z-index: -1;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    min-width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    backdrop-filter: blur(10px);
+}
+
+p{
+    color: rgba(10, 241, 230, 0.493);
+    padding-top: 3rem;
+    margin: 1rem 3rem;
+    background-color: rgba(0, 0, 0, 0.596);
+}
+
+h2{
+    text-shadow: 1px 3px 3px aqua;
+    font-size: 2rem;
+    letter-spacing: 14px;
+    color: white;
+    background-color: black;
+    padding: 1rem 0rem;
+}
+
+body{
+    background-image: url("ballon-bday.jpg");
+    backdrop-filter: blur(0px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
+}
+
+.lbl{
+    color: black;
+    background-color: aqua;
+}
+
+input{
+    padding: 0.5rem 2rem;
+    margin: 5rem;
+    background-color: rgba(255, 255, 255, 0);
+    color: aqua;
+    border-radius: 0.5rem;
+    border-width: 0.1rem;
+    border-color: aqua;
+    font-family: 'Raleway', sans-serif;
+}
+
+input:hover{
+    transition: 0.5s;
+    padding: 0.6rem 2.2rem;
+    margin: 5rem;
+    background-color: white; 
+    color: black;
+    border-radius: 0.5rem;
+    border-width: 0.1rem;
+    border-color: aqua;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+#show-btn{
+    margin: 2rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.644);
+    color: aqua;
+    border: 1rem solid;
+    border-radius: 0.5rem;
+    border-width: 0.1rem;
+    border-color: aqua;
+}
+
+#show-btn:hover{
+   
+    transition: 0.5s;
+    cursor: pointer;
+    margin: 2rem;
+    padding: 0.6rem 1.5rem;
+    font-weight: bold;
+    background-color: aqua;
+    color: black;
+    border: 1rem solid;
+    border-radius: 0.5rem;
+    border-width: 0.1rem;
+    border-color: black;
+}
+
+
+
+#output{
+    color: rgb(0, 255, 255);
+    font-weight: bolder;
+    font-size: larger;
+   
+    padding: 1rem;
+
+}

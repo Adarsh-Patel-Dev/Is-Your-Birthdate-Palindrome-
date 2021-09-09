@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,28 @@
     <title>Palindrome Birthday</title>
     <link href="style.css" rel="stylesheet" />
 </head>
-<body>
-    <main>
-        <h2>Palindrome Birthday</h2>
-        <input type="date" id="bday-input" />
-        <button id="show-btn">Show</button>
-        <p id="output"></p>
 
-    </main>
+<body>
+
+    <div class="hero">
+
+        <h2>Palindrome Birthday</h2>
+
+        <video class="video-bg" autoplay muted loop>
+            <source src = "bday.mp4" type="video/mp4">
+        </video> 
+
+        <p>Enter your date of birth to know whether your date of birth is palindrome or not. It also tells nearest Palindrome date to your date of Birth.</p>
+        <div class="main">
+            <label for="bday-input" class="lbl"></label>
+            <input type="date" id="bday-input">
+            <button id="show-btn">Show</button>
+            <p id="output"></p>
+
+        </div>
+    </div>
     <script src="app.js"></script>
-    
+
 </body>
+
 </html>
