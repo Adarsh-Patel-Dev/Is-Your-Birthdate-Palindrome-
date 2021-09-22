@@ -1,45 +1,39 @@
-/* body{
-    <iframe src="https://assets.pinterest.com/ext/embed.html?id=502714377165114497" height="354" width="450" frameborder="0" scrolling="no" ></iframe>
-} */
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap');
 
 
 .hero{
    /* display: flex; */
-    justify-content: center;
+    
     align-items: center;
     text-align: center;
     color: white;
-    /* background-color: rgba(0, 0, 0, 0.541); */
+    background-color: rgba(0, 0, 0, 0.541);
     margin-top: 3rem;
     padding: 20px 0px;
     overflow: hidden;
-    min-height: 90vh;
-    max-width: 80%;
+    height: auto;
+    max-width: 50%;
     margin: auto;
     border-radius: 1rem;
     backdrop-filter: blur(0px);
+    transition: 1.5s;
     
 }
 
-.video-bg{
-    z-index: -1;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    min-width: 100%;
-    height: 100%;
-    margin: 0%;
-    padding: 0%;
-    backdrop-filter: blur(10px);
+.hero:hover{
+    background-color: rgba(0, 0, 0, 0.795);
+    transition: 1s;
+    padding: 25px 5px;
 }
+
 
 p{
     color: rgba(10, 241, 230, 0.493);
     padding-top: 3rem;
     margin: 1rem 3rem;
-    background-color: rgba(0, 0, 0, 0.596);
+    background-color: rgba(0, 0, 0, 0);
+    font-size: large;
 }
 
 h2{
@@ -47,7 +41,7 @@ h2{
     font-size: 2rem;
     letter-spacing: 14px;
     color: white;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.644);
     padding: 1rem 0rem;
 }
 
@@ -76,6 +70,7 @@ input{
     border-width: 0.1rem;
     border-color: aqua;
     font-family: 'Raleway', sans-serif;
+    transition: 1.5s;
 }
 
 input:hover{
@@ -101,11 +96,12 @@ input:hover{
     border-radius: 0.5rem;
     border-width: 0.1rem;
     border-color: aqua;
+    transition: 1.5s;
 }
 
 #show-btn:hover{
    
-    transition: 0.5s;
+    transition: 1s;
     cursor: pointer;
     margin: 2rem;
     padding: 0.6rem 1.5rem;
@@ -120,12 +116,13 @@ input:hover{
 
 
 
-#output{
-    color: rgb(0, 255, 255);
-    font-weight: bolder;
+#prevPalindrome,#nextPalindrome{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.774);
     font-size: larger;
-   
-    padding: 1rem;
+    box-sizing: border-box;
+    border: 2px solid white;
+    padding: 1.5rem;
 
 }
 
@@ -133,9 +130,18 @@ input:hover{
 
 footer{
     background-color: rgba(0, 0, 0, 0.616);
-    margin: -1rem;
-    margin-top: 1rem;
+    /* margin-left: -9rem;
+    margin-right: -9rem; */
+    margin: -10px;
+    margin-top: 1.5rem;
+    border-radius: 1.2rem 1.2rem 0rem 0rem;
+    transition: 1.5s;
     
+}
+
+footer:hover{
+    background-color: rgba(0, 0, 0, 0.767);
+    transition: 1s;
 }
 .fa {
     padding: 10px;
