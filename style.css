@@ -1,10 +1,9 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap');
 
 
-.hero{
-   /* display: flex; */
-    
+.hero {
+    /* display: flex; */
+
     align-items: center;
     text-align: center;
     color: white;
@@ -18,17 +17,17 @@
     border-radius: 1rem;
     backdrop-filter: blur(0px);
     transition: 1.5s;
-    
+
 }
 
-.hero:hover{
+.hero:hover {
     background-color: rgba(0, 0, 0, 0.795);
     transition: 1s;
     padding: 25px 5px;
 }
 
 
-p{
+p {
     color: rgba(10, 241, 230, 0.493);
     padding-top: 3rem;
     margin: 1rem 3rem;
@@ -36,7 +35,7 @@ p{
     font-size: large;
 }
 
-h2{
+h2 {
     text-shadow: 1px 3px 3px aqua;
     font-size: 2rem;
     letter-spacing: 14px;
@@ -45,7 +44,7 @@ h2{
     padding: 1rem 0rem;
 }
 
-body{
+body {
     background-image: url("ballon-bday.jpg");
     backdrop-filter: blur(0px);
     background-position: center;
@@ -56,12 +55,12 @@ body{
     background-color: black;
 }
 
-.lbl{
+.lbl {
     color: black;
     background-color: aqua;
 }
 
-input{
+input {
     padding: 0.5rem 2rem;
     margin: 5rem;
     background-color: rgba(255, 255, 255, 0);
@@ -73,11 +72,11 @@ input{
     transition: 1.5s;
 }
 
-input:hover{
+input:hover {
     transition: 0.5s;
     padding: 0.6rem 2.2rem;
     margin: 5rem;
-    background-color: white; 
+    background-color: white;
     color: black;
     border-radius: 0.5rem;
     border-width: 0.1rem;
@@ -86,7 +85,7 @@ input:hover{
 }
 
 
-#show-btn{
+#show-btn {
     margin: 2rem;
     padding: 0.5rem 1rem;
     font-weight: bold;
@@ -99,8 +98,8 @@ input:hover{
     transition: 1.5s;
 }
 
-#show-btn:hover{
-   
+#show-btn:hover {
+
     transition: 1s;
     cursor: pointer;
     margin: 2rem;
@@ -116,7 +115,8 @@ input:hover{
 
 
 
-#prevPalindrome,#nextPalindrome{
+#prevPalindrome,
+#nextPalindrome {
     color: white;
     background-color: rgba(0, 0, 0, 0.774);
     font-size: larger;
@@ -128,7 +128,7 @@ input:hover{
 
 /*footer*/
 
-footer{
+footer {
     background-color: rgba(0, 0, 0, 0.616);
     /* margin-left: -9rem;
     margin-right: -9rem; */
@@ -136,13 +136,14 @@ footer{
     margin-top: 1.5rem;
     border-radius: 1.2rem 1.2rem 0rem 0rem;
     transition: 1.5s;
-    
+
 }
 
-footer:hover{
+footer:hover {
     background-color: rgba(0, 0, 0, 0.767);
     transition: 1s;
 }
+
 .fa {
     padding: 10px;
     font-size: larger;
@@ -153,47 +154,47 @@ footer:hover{
     margin: 2rem;
     color: white;
     transition: 1s;
-  }
-
-  .fa-github:hover{
-      color: #624a85;
-     margin: 0px 50px;
-     transition: 1s;
-     font-size: xx-large;
 }
 
-  .fa-linkedin:hover{
-      color: #0e76a8 ;
-      margin: 0px 50px;
-     transition: 1s;
-     font-size: xx-large;
-  }
+.fa-github:hover {
+    color: #624a85;
+    margin: 0px 50px;
+    transition: 1s;
+    font-size: xx-large;
+}
 
-  .fa-twitter:hover{
-      color:#1DA1F2;
-      margin: 0px 50px;
-     transition: 1s;
-     font-size: xx-large;
-  }
+.fa-linkedin:hover {
+    color: #0e76a8;
+    margin: 0px 50px;
+    transition: 1s;
+    font-size: xx-large;
+}
 
-  .fa-instagram:hover{
-      color:#fb3958 ;
-      margin: 0px 50px;
-     transition: 1s;
-     font-size: xx-large;
-  }
-  
-  footer h3{
-      
-      padding: 3rem;
-      margin: auto;
-      text-align: center;
-      color: gray;
-  }
+.fa-twitter:hover {
+    color: #1DA1F2;
+    margin: 0px 50px;
+    transition: 1s;
+    font-size: xx-large;
+}
 
-  .icon{
-      margin-left: 2rem;
-      padding: auto;
-      text-align: center;
-      font-size: x-large;
-  }
+.fa-instagram:hover {
+    color: #fb3958;
+    margin: 0px 50px;
+    transition: 1s;
+    font-size: xx-large;
+}
+
+footer h3 {
+
+    padding: 3rem;
+    margin: auto;
+    text-align: center;
+    color: gray;
+}
+
+.icon {
+    margin-left: 2rem;
+    padding: auto;
+    text-align: center;
+    font-size: x-large;
+}
