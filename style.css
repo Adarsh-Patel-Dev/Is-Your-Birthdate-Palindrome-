@@ -113,7 +113,9 @@ input:hover {
     border-color: black;
 }
 
-
+.output{
+    display: none;
+}
 
 #prevPalindrome,
 #nextPalindrome {

@@ -191,10 +191,12 @@ function getPreviousPalindromeDate(date){
     var showBtnRef = document.querySelector("#show-btn");
     var resultRef = document.querySelector("#prevPalindrome");
     var resultRefer = document.querySelector("#nextPalindrome");
+    var output = document.querySelector(".output");
 
 
     function clickHandler(e) {
         var bdayStr = dateInput.value;
+        output.style.display = "block";
 
         if (bdayStr !== '') {
             var listOfDate = bdayStr.split('-');
