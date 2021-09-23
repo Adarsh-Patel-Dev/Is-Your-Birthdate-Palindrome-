@@ -210,6 +210,7 @@ function getPreviousPalindromeDate(date){
 
             if (isPalindrome) {
                 resultRef.innerText = "WOW your b'day is palindrome 🤩"
+                resultRefer.style.display = "none";
 
             } else {
                 var [ctr, nextDate] = getNextPalindromeDate(date);
