@@ -116,11 +116,11 @@ function getNextDate(date) {
 }
 
 function getNextPalindromeDate(date) {
-    var ctr = 0;
+    var nextCounter = 0;
     var nextDate = getNextDate(date);
 
     while (1) {
-        ctr++;
+        nextCounter++;
         var isPalindrome = checkPalindromeForAllDateFormat(nextDate);
         if (isPalindrome) {
             break;
@@ -128,7 +128,7 @@ function getNextPalindromeDate(date) {
         nextDate = getNextDate(nextDate);
 
     }
-    return [ctr, nextDate];
+    return [nextCounter, nextDate];
 
 }
 
@@ -170,11 +170,11 @@ function getPreviousDate(date) {
 }
 
 function getPreviousPalindromeDate(date){
-    var counter = 0;
+    var prevCounter = 0;
     var previousDate = getPreviousDate(date);
 
     while(1){
-        counter++;
+        prevCounter++;
         var isPreviousPalindrome = checkPalindromeForAllDateFormat(previousDate);
         if(isPreviousPalindrome){
             break;
@@ -182,7 +182,7 @@ function getPreviousPalindromeDate(date){
         previousDate = getPreviousDate(previousDate);
     }
 
-    return [counter,previousDate];
+    return [prevCounter,previousDate];
 }
 
 
@@ -190,7 +190,7 @@ function getPreviousPalindromeDate(date){
     var dateInput = document.querySelector("#bday-input");
     var showBtnRef = document.querySelector("#show-btn");
     var resultRef = document.querySelector("#prevPalindrome");
-    var resultRefer = document.querySelector("#nextPalindrome");
+    // var resultRefer = document.querySelector("#nextPalindrome");
     var output = document.querySelector(".output");
 
 
@@ -210,13 +210,18 @@ function getPreviousPalindromeDate(date){
 
             if (isPalindrome) {
                 resultRef.innerText = "WOW your b'day is palindrome 🤩"
-                resultRefer.style.display = "none";
+                // resultRefer.style.display = "none";
 
             } else {
                 var [ctr, nextDate] = getNextPalindromeDate(date);
                 var [previousCtr, previousDate] = getPreviousPalindromeDate(date);
-                resultRef.innerText = `The previous palindrome date is ${previousDate.day}-${previousDate.month}-${previousDate.year} , you missed it by ${previousCtr} days!`
-                resultRefer.innerText = `The next palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year} , you missed it by ${ctr} days!`
+                if(ctr > previousCtr ){
+                    resultRef.innerText = `The nearest palindrome date is ${previousDate.day}-${previousDate.month}-${previousDate.year} , you missed it by only ${previousCtr} days 😧!`
+                }else{
+                    resultRef.innerText = `The nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year} , you missed it by only ${ctr} days 😧!`
+                }
+                // resultRef.innerText = `The previous palindrome date is ${previousDate.day}-${previousDate.month}-${previousDate.year} , you missed it by ${previousCtr} days!`
+                // resultRefer.innerText = `The next palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year} , you missed it by ${ctr} days!`
 
             }
         } else {
